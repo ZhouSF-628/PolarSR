@@ -12,8 +12,6 @@ https://cmake.org/download/
 
 (https://github.com/Kitware/CMake/releases/download/v3.29.0/cmake-3.29.0-windows-x86_64.msi)
 
-安装完记得设置路径
-
 ### 下载 MITSUAB 源码
 `git clone --recursive https://github.com/mitsuba-renderer/mitsuba3`
 
