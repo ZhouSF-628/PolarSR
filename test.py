@@ -88,7 +88,7 @@ I45 = (S0  + S2) / 2
 cv2.imwrite(os.path.join(save_path, 'I45.png'), cv2.cvtColor(I45, cv2.COLOR_BGR2RGB) * 255)
 I90 = (S0 - S1) / 2
 cv2.imwrite(os.path.join(save_path, 'I90.png'), cv2.cvtColor(I90, cv2.COLOR_BGR2RGB) * 255)
-I135 = (S0 + np.sqrt(2)/2 * S1 - np.sqrt(2)/2 * S2 ) / 2
+I135 = (S0 - S2 ) / 2
 cv2.imwrite(os.path.join(save_path, 'I135.png'), cv2.cvtColor(I135, cv2.COLOR_BGR2RGB) * 255)
 
 # 再合并成一张图
