@@ -77,9 +77,9 @@ ax[4].imshow(theta)
 ax[4].set_xlabel("AoP", size=14, weight='bold')
 
 # 保存
-plt.savefig('./data/ball_512/ball.png')
-cv2.imwrite('./data/ball_512/DoP.png', p * 255)
-cv2.imwrite('./data/ball_512/AoP.png', theta * 255)
+plt.savefig(os.path.join(save_path, 'ball.png'))
+cv2.imwrite(os.path.join(save_path, 'DoP.png'), p * 255)
+cv2.imwrite(os.path.join(save_path, 'AoP.png'), theta * 255)
 
 # 转换成不同角度的 pol 分量
 I0 = (S0 + S1) / 2
